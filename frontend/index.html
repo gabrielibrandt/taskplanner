@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="top-bar">
+
+            <h1>📋 Task Planner</h1>
+
+            <button id="themeBtn">
+                🌙 Tema
+            </button>
+
+        </div>
+
+        <div class="stats">
+            <span id="totalTasks">
+                Total: 0 tarefas
+            </span>
+        </div>
+
+        <section class="form-section">
+
+            <input
+                type="text"
+                id="task"
+                placeholder="Nome da tarefa">
+
+            <input
+                type="text"
+                id="duration"
+                placeholder="Ex: 30 min">
+
+            <button onclick="addTask()">
+                +
+            </button>
+
+        </section>
+
+        <section>
+
+            <div id="taskList"></div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

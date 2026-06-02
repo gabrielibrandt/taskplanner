@@ -1,0 +1,169 @@
+:root{
+    --bg:#f7f8fc;
+    --card:#ffffff;
+    --text:#1f2937;
+    --secondary:#6b7280;
+    --border:#d1d5db;
+}
+
+.dark{
+    --bg:#111827;
+    --card:#1f2937;
+    --text:#f9fafb;
+    --secondary:#9ca3af;
+    --border:#374151;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    transition:.3s;
+    min-height:100vh;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:30px;
+}
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.top-bar h1{
+    font-size:2rem;
+}
+
+.stats{
+    margin-bottom:25px;
+    color:var(--secondary);
+    font-size:1rem;
+}
+
+.form-section{
+    display:grid;
+    grid-template-columns:2fr 1fr auto;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+input{
+    padding:14px;
+    border-radius:12px;
+    border:1px solid var(--border);
+    background:var(--card);
+    color:var(--text);
+    font-size:1rem;
+}
+
+button{
+    border:none;
+    border-radius:12px;
+    padding:14px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.2s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+.form-section button{
+    background:#2563eb;
+    color:white;
+}
+
+#themeBtn{
+    background:#f59e0b;
+    color:white;
+}
+
+#taskList{
+    display:grid;
+    gap:15px;
+}
+
+.task-card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.task-info{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.task-title{
+    font-size:1.1rem;
+    font-weight:bold;
+}
+
+.task-duration{
+    color:var(--secondary);
+}
+
+.completed{
+    text-decoration:line-through;
+    opacity:.6;
+}
+
+.actions{
+    display:flex;
+    gap:10px;
+}
+
+.complete-btn{
+    background:#22c55e;
+    color:white;
+}
+
+.delete-btn{
+    background:#ef4444;
+    color:white;
+}
+
+.empty-message{
+    text-align:center;
+    color:var(--secondary);
+    margin-top:20px;
+}
+
+@media(max-width:700px){
+
+    .form-section{
+        grid-template-columns:1fr;
+    }
+
+    .task-card{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .actions{
+        width:100%;
+    }
+
+    .actions button{
+        flex:1;
+    }
+}
