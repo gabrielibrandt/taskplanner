@@ -193,4 +193,4 @@ Além disso, foram aplicados conceitos de interface moderna, tema claro/escuro e
 
 ## 👨‍💻 Autor
 
-Desenvolvido por Gabrieli para fins de estudo, portfólio e organização pessoal.
+Desenvolvido por Gabrieli Brandt para fins de estudo, portfólio e organização pessoal.
